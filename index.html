@@ -6,44 +6,37 @@
     <title>RAM's Website</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
 </head>
-<body class="bg-black text-white font-serif flex flex-col min-h-screen">
+<body class="bg-white text-black font-serif flex flex-col min-h-screen">
     <div class="text-5xl font-medium flex justify-between bg-yellow-700 py-2 items-center px-2">
         <p>RAM</p>
         <ul class="flex gap-2 cursor-pointer">
-            <li class="bg-black rounded-full p-2 hover:text-yellow-700">Home</li>
-            <li class="bg-black rounded-full p-2 hover:text-yellow-700">About</li>
-            <li class="bg-black rounded-full p-2 hover:text-yellow-700">Contact</li>
+            <li class="bg-white rounded-full p-2 hover:text-yellow-700">Home</li>
+            <li class="bg-white rounded-full p-2 hover:text-yellow-700">About</li>
+            <li class="bg-white rounded-full p-2 hover:text-yellow-700">Contact</li>
         </ul>
     </div>
-    <div class="flex flex-grow items-center justify-evenly">
-        <img src="./logo3.png" alt="company logo" class="h-96 w-96"/>
-        <div>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-        </div>
-    </div>
-    <div class="flex flex-grow items-center justify-evenly">
-        <img src="./logo3.png" alt="company logo" class="h-96 w-96"/>
-        <div>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-        </div>
-        <div>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-            <p>INTRO: Hi, my name is Ram, and I have a musical studio.</p>
-            <p>MY WORK: I have 2 years of experience.</p>
-        </div>
+    <div class="">
+        <form class="flex flex-col items-center mt-20 py-10 border border-black mx-96">
+            <div>
+                <label class="text-3xl" for="name">Enter the name:</label>
+                <input id="name" type="text" class="border border-green-800">
+            </div>
+            <div class="">
+                <label class="text-3xl" for="age">Enter your age<span class="ml-3">:</span></label>
+                <input id="age" type="number" class="border border-black">
+            </div>
+            <div class="flex items-center">
+                <label class="text-3xl">Gender<span class="ml-12">:</span></label>
+                <div class="">
+                <label class="px-1">Male<input name="gender" type="radio"> </label>
+                <label>Female<input name="gender" type="radio"> </label>
+                </div>
+            </div>
+            <div class="mt-4">
+                <label class="text-2xl cursor-pointer border rounded-md border-black" for="submit">Submit</label>
+                <input id="submit" type="button">
+            </div>
+        </form>
     </div>
     <footer class="bg-yellow-700 py-4 mt-auto">
         <p class="text-center">@2024 all rights reserved</p>
